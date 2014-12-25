@@ -80,7 +80,7 @@ gulp.task('serve', ['styles', 'images'], function() {
   });
   gulp.watch(['wwwroot/**/*.html'], reload);
   gulp.watch(['assets/styles/**/*.{scss,css}'], ['styles', reload]);
-  gulp.watch(['assets/scripts/**/*.js'], ['jshint']);
+  gulp.watch(['wwwroot/scripts/**/*.js'], ['jshint']);
   gulp.watch(['assets/images/**/*'], ['images'], reload);
 });
 
