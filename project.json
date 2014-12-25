@@ -15,5 +15,8 @@
   "frameworks": {
     "aspnet50": {}
   },
+  "scripts": {
+    "postrestore": ["npm install"]
+  },
   "webroot": "wwwroot"
 }
