@@ -12,6 +12,7 @@ Yes, let's try - I'm don't want to use Visual Studio yet on my machine yet.
 ## Contents
 * [vNext Environment Installation](#vnext-environment-installation)
 * [Scaffold Project](#scaffold-project)
+* [Running Project](#running-project)
 * TBD
 
 ## vNext Environment Installation
@@ -28,6 +29,26 @@ This project starting web code was scaffolded by using @yeoman based @OmniSharp'
 ```bash
 yo aspnet
 ```
+
+## Running Project
+
+At this point you should be able to run scaffolded application with these steps:
+
+```
+$ kpm restore  
+[...]  
+$ kpm build  
+[...]
+$ k kestrel
+[...]
+```
+
+
+> Note: I'm on Mac OS X - on Windows you should use `k web`
+
+If you go to `http://localhost:5004` (or `5000` on Windows) you should see:
+
+![Welcome Page Image](docs/welcome.jpg)
 
 
 
