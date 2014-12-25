@@ -8,6 +8,7 @@ namespace KWebStartup
         public void Configure(IApplicationBuilder app)
         {
             app.UseStaticFiles();
+            app.UseWelcomePage();
         }
     }
 }
