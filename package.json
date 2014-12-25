@@ -1,0 +1,39 @@
+{
+  "name": "vnext-web-starter-kit",
+  "private": true,
+  "version": "1.0.0",
+  "description": "A playground project with upcoming ASP .NET vNext version",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/peterblazejewicz/vnext-web-starter-kit.git"
+  },
+  "keywords": [
+    "vNext",
+    "ASP",
+    "Gulp",
+    "Node"
+  ],
+  "author": "Peter Blazejewicz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/peterblazejewicz/vnext-web-starter-kit/issues"
+  },
+  "homepage": "https://github.com/peterblazejewicz/vnext-web-starter-kit",
+  "devDependencies": {
+    "browser-sync": "^1.8.2",
+    "del": "^1.1.1",
+    "gulp": "^3.8.10",
+    "gulp-autoprefixer": "^2.0.0",
+    "gulp-cache": "^0.2.4",
+    "gulp-changed": "^1.1.0",
+    "gulp-csso": "^0.2.9",
+    "gulp-flatten": "0.0.4",
+    "gulp-if": "^1.2.5",
+    "gulp-load-plugins": "^0.8.0",
+    "gulp-sass": "^1.2.4",
+    "run-sequence": "^1.0.2"
+  }
+}
