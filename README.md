@@ -6,14 +6,15 @@
 Why?
 > That said, you can also try out ASP.NET vNext with just a command-prompt and a text editor.
 
-Yes, let's try - I'm don't want to use Visual Studio yet on my machine yet.
+Yes, let's try:
+
+![vNext on Mac OS X](docs/vnext.gif)
 
 
 ## Contents
 * [vNext Environment Installation](#vnext-environment-installation)
 * [Scaffold Project](#scaffold-project)
 * [Running Project](#running-project)
-* TBD
 
 ## vNext Environment Installation
 
@@ -39,16 +40,24 @@ $ kpm restore
 [...]  
 $ kpm build  
 [...]
-$ k kestrel
+$ k watch
 [...]
 ```
 
+> Note: this project uses `kmon` command [https://github.com/henriksen/kmon](https://github.com/henriksen/kmon) which depends on `nodemon`. So make sure that you have installed `nodemon` before running this project:
+> ```
+> npm install -g nodemon
+> ```
 
-> Note: I'm on Mac OS X - on Windows you should use `k web`
+The project page is by default run at 'http://localhost:3000/index.html'.
 
-If you go to `http://localhost:5004` (or `5000` on Windows) you should see:
+You can now also type in new terminal window:
+```
+gulp
+```
+and this will start new browser window using @browser-sync tool watching for changes in project directory:
 
-![Welcome Page Image](docs/welcome.jpg)
+![Welcome Page Image](docs/index.jpg)
 
 
 
