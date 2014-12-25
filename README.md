@@ -11,6 +11,7 @@ Yes, let's try - I'm don't want to use Visual Studio yet on my machine yet.
 
 ## Contents
 * [vNext Environment Installation](#vnext-environment-installation)
+* [Scaffold Project](#scaffold-project)
 * TBD
 
 ## vNext Environment Installation
@@ -19,6 +20,14 @@ The entire process of installing the new `K Runtime Environment (KRE)`, `K Versi
 
 If you are using @oh-my-zsh on OS 10.* 'Yosemite' please use tips from this issue to fix vNext `cli` integration problems:
 [https://github.com/aspnet/kvm/issues/83](https://github.com/aspnet/kvm/issues/83#issuecomment-63178442), [https://github.com/aspnet/kvm/issues/83#issuecomment-63178442](https://github.com/aspnet/kvm/issues/83#issuecomment-63178442).
+
+## Scaffold Project
+
+This project starting web code was scaffolded by using @yeoman based @OmniSharp's [generator-aspnet](https://github.com/OmniSharp/generator-aspnet) just by running:
+
+```bash
+yo aspnet
+```
 
 
 
