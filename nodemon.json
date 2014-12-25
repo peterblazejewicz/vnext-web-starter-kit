@@ -1,6 +1,5 @@
 {
   "verbose": true,
   "restartable": "restart",
-  "ignore": [".git", "node_modules", "bower_components", ".sass-cache", "docs", "wwwroot"],
-  "watch": ["assets"]
+  "ignore": ["*.*", "assets", "node_modules", "bower_components", ".sass-cache", "docs", "wwwroot"]
 }
