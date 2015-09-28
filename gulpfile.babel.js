@@ -21,7 +21,9 @@
 // Babel handles this without us having to do anything. It just works.
 // You can read more about the new JavaScript features here:
 // https://babeljs.io/docs/learn-es2015/
-
+/* jshint node: true */
+/* jshint esnext: true */
+'use strict';
 import fs from 'fs';
 import path from 'path';
 import gulp from 'gulp';
@@ -158,7 +160,11 @@ gulp.task('html', () => {
 });
 
 // Clean output directory
-gulp.task('clean', cb => del(['.tmp', 'dist/*', '!dist/.git'], {dot: true}, cb));
+gulp.task('clean', cb => del(
+  ['.tmp', 'dist/*', '!dist/.git'],
+  {dot: true},
+  cb)
+);
 
 // Watch files for changes & reload
 gulp.task('serve', ['styles'], () => {
